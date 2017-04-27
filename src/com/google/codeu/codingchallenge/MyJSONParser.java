@@ -21,6 +21,13 @@ final class MyJSONParser implements JSONParser {
   @Override
   public JSON parse(String in) throws IOException {
     // TODO: implement this
+    //I honestly failed to understand the code. Specifically I failed to understand how to initialize the 
+    //The JSON object in the Parser.(I know I have to use the this reference but I failed to undertsand how to use
+    //colelction methods to add or iterate through the JSON objects).
+    //This was quite a challenge as I am used to parsing JSON using
+    //Precreated libraries such as GSON. I know this is an amazing opportunity to learn from googleand will miss out on
+    //a lot due to mty incompetence in Java at the moment but I highly appreciate the chance nontheless and will work hard
+    //To get myself at a top level then try again. 
     return new MyJSON();
   }
 }

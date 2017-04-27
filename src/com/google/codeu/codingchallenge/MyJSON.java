@@ -21,34 +21,63 @@ final class MyJSON implements JSON {
   @Override
   public JSON getObject(String name) {
     // TODO: implement this
-    return null;
+    Collection object=null;
+    if (object.contains(name)== true){
+       System.out.println("Present");
+
+    }else{
+        System.out.println("Empty");
+    }
+     return null;        
   }
 
   @Override
   public JSON setObject(String name, JSON value) {
     // TODO: implement this
-    return this;
+   MyJSON object=this;
+   object.setObject(name, value);
+   return this;
   }
 
   @Override
   public String getString(String name) {
     // TODO: implement this
-    return null;
+    Collection object=null;
+    if (object.contains(name)== true){
+      return getString(name);
+    }else{
+      return null;
+    }
   }
 
   @Override
   public JSON setString(String name, String value) {
     // TODO: implement this
+   MyJSON object=this;
+   object.setString(name, value);
     return this;
   }
 
   @Override
   public void getObjects(Collection<String> names) {
     // TODO: implement this
+    Collection object=null;
+    if (object.containsAll(names)== true){
+        System.out.println("True");
+    }else{
+      System.out.println("False");
+    }
   }
 
   @Override
   public void getStrings(Collection<String> names) {
     // TODO: implement this
+      Collection object=null;
+    if (object.containsAll(names)== true){
+      System.out.print(names);
+              
+    }else{
+      System.out.println("False");
+    }
   }
 }
